@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&family=Signika+Negative:wght@700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Signika Negative", sans-serif;
+}
+
+button {
+  font-family: "Signika Negative", sans-serif;
+  cursor: pointer;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  border: 5px solid #000;
+  border-radius: 5px;
+  width: 20vw;
+  background: #5f0ddb;
+  padding: 0.5rem;
+}
+
+.display {
+  width: 100%;
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  background: #111111ab;
+  margin-bottom: 1rem;
+}
+
+.display #number {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  color: #fff;
+  font-size: 2.5rem;
+  border: none;
+  text-align: right;
+  caret-color: transparent;
+}
+
+.display #number:focus-visible,
+.display #number:focus {
+  border: none;
+  outline: none;
+}
+
+.buttons-container {
+  display: flex;
+  height: 100%;
+}
+
+.operators {
+  width: 75%;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.operators button {
+  width: 46%;
+  height: 100px;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #000000;
+}
+
+.operators button:first-child {
+  margin: 5px 0 0 10px;
+}
+
+.operators button + button {
+  margin: 5px 0 5px 10px;
+}
+
+.equal-content {
+  width: 25%;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.equal-content button {
+  width: 95%;
+  height: 95%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #222;
+  margin: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="text"] {
+  -moz-appearance: textfield;
+}
+
+.numbers-container {
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.numbers-container button {
+  border: 4px solid #000;
+  font-size: 1rem;
+}
