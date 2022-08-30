@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400;500&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000")
+    center center;
+  font-family: "Anek Telugu", sans-serif;
+}
+
+.card {
+  width: 20vw;
+  background: rgba(58, 58, 58, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card-title {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+.card-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.card-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-avatar img {
+  border: 10px solid rgba(58, 58, 58, 0.6);
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.card-content-img {
+  background: rgba(58, 58, 58, 0.6);
+  padding: 0.8rem;
+  border-radius: 100%;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.card-content img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.card-footer a {
+  background: rgba(58, 58, 58, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 1rem;
+  transition: filter 0.2s;
+}
+
+.card-footer a:hover {
+  filter: brightness(0.8);
+}
+
+.card-footer a img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin: 0;
+  vertical-align: middle;
+}
